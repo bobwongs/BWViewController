@@ -68,7 +68,8 @@
 {
     if (self = [super initWithRootViewController:rootViewController]) {
         // 隐藏线条
-        [self.navigationBar setBackgroundImage:[[self class] imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];  // 设置这个为[UIImage new]对象的话，在切换视图的时候导航条的渐变色会很突兀，因为没有背景图
+        [self.navigationBar setBackgroundImage:[[self class] imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
+        // 设置这个为[UIImage new]对象的话，在切换视图的时候导航条的渐变色会很突兀，因为没有背景图
         self.navigationBar.shadowImage = [[UIImage alloc] init];
         
         // 自定义线条
